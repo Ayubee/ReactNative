@@ -33,7 +33,7 @@ const styles = StyleSheet.create ({
         color:'#E6B939',
         fontFamily:'sans-serif',
         marginBottom: 10
-    },
+    },  
     link:{
         color:'#fff',
         fontFamily:'sans-serif',
