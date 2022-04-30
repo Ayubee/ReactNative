@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Header from './export/header';
 import Section from './export/section';
 import Promo from './export/promo';
+import Continer from './export/continer';
 import { StyleSheet, Text, View,SafeAreaView,Image,Button } from 'react-native';
 
 export default function App() {
@@ -11,30 +12,15 @@ export default function App() {
       <Header/>
       <Section/>
       <Promo/>
+      <Continer/>
      </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-
-  flex:{
-    display:'none'
-  },
-
-  section: {
-    // width: 300,
-    // height:300,
-    // backgroundColor: 'yellow'
-    display:'none'
-  },
-  footer: {
-    // width: 300,
-    // height:300,
-    // backgroundColor: 'green'
-    display:'none'
-  },
-  text:{
-    color: 'blue',
-  left: "20",
-  },
+  container:{
+    width:'100%',
+    
+    flex:1
+  }
 });
