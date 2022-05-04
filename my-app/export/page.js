@@ -4,7 +4,7 @@ import {StyleSheet,Text,ImageBackground,Image,View, SafeAreaView} from 'react-na
 export default function Page (){
 
     return(
-<SafeAreaView style={{marginTop:55}}>
+<SafeAreaView style={{marginTop:55,marginBottom:250}}>
     <View style={{
         textAlign:'center',
         fontFamily:'sans-serif'
@@ -16,7 +16,8 @@ export default function Page (){
 
     <View style={styles.conainer}>
         <ImageBackground style={{width:"95%",
-        height:450,marginLeft:'auto',}} source={require('../img/accessories.png')}>
+        height:450,marginLeft:'auto',borderTopLeftRadius: 20,
+        borderTopRightRadius: 60}} source={require('../img/accessories.png')}>
 <Text style={{
     marginTop:45,
     marginBottom:15,
@@ -30,7 +31,7 @@ export default function Page (){
     </View>
     <View style={styles.conainer}>
     <ImageBackground style={{width:"95%",
-        height:450,marginLeft:'auto',borderRadius:30}} source={require('../img/2.png')}>
+        height:450,marginLeft:'auto'}} source={require('../img/2.png')}>
             <Text style={styles.Text}>Apparel</Text>
             <Text style={styles.SubText}>Check out our line of non-hiking clothes.</Text>
         </ImageBackground>
