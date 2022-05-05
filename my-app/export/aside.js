@@ -10,13 +10,37 @@ export default function Aside () {
             <View>
                 
                 <Image style={style.img} source={require('../img/alpinist.png')}/>
-                <View><Text style={style.imgText}>3 climbing accessories for the climber that has everything</Text>
+                <View>
+                    <Text style={style.imgText}>3 climbing accessories for the climber that has everything</Text>
+                    <View style={{flexDirection:'row'}}>
                 <Image style={style.subImg} source={require('../img/ava1.png')}/>
+                <View>
+                    <Text style={style.avaText}>Alex Jenna</Text>
+                    <Text style={style.avaSubText}>QA</Text>
+                    
+                    </View>
+                    <View style={{marginLeft:'45%'}}><Text>October 18, 2021</Text></View>
+                    </View>
+                
                 </View>
                 <Image style={style.img} source={require('../img/bike.png')}/>
-                <View><Text style={style.imgText}>Biking accessories for the beaten path</Text>
-                <Image style={style.subImg} source={require('../img/ava2.png')}/></View>    
-            </View>
+                <View>
+                    <Text style={style.imgText}>Biking accessories for the beaten path</Text>
+
+
+
+
+                <View style={{flexDirection:'row'}}>
+                <Image style={style.subImg} source={require('../img/ava2.png')}/>
+                <View>
+                    <Text style={style.avaText}>Alex Jenna</Text>
+                    <Text style={style.avaSubText}>QA</Text>
+                    </View>
+                    
+                    <View style={{marginLeft:'45%'}}><Text>October 18, 2021</Text></View>
+                    </View>
+                    </View>
+                </View>    
         </SafeAreaView>
     )
 }
@@ -24,7 +48,7 @@ export default function Aside () {
 const style=StyleSheet.create({
     aside:{
         width:'100%',
-        height:'100%',
+        height:850,
         marginTop:'110%',
         fontFamily:'sans-serif'
     },
@@ -49,5 +73,8 @@ const style=StyleSheet.create({
     },
     subImg:{
         width:35,height:35
+    },
+    avaText:{
+        flexDirection:'column'
     }
 })

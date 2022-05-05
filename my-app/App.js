@@ -8,7 +8,10 @@ import Continer from './export/continer';
 import Page from './export/page';
 import Wrap from './export/wrap';
 import Aside from './export/aside';
+import Content from './export/content';
 import { StyleSheet, Text, View,SafeAreaView,Image,Button } from 'react-native';
+import Footer from './export/footer';
+
 
 export default function App() {
   return (
@@ -20,6 +23,8 @@ export default function App() {
       <Page/>
       <Wrap/>
       <Aside/>
+      <Content/>
+      <Footer/>
      </SafeAreaView>
   );
 }
@@ -27,7 +32,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container:{
     width:'100%',
-    
+    height:'100%',
     flex:1
   }
 });
